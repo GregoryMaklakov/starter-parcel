@@ -1,4 +1,5 @@
-@use 'variables' as v;
+@use '../components/utils' as u;
+
 
 *,
 *:after,
@@ -8,20 +9,21 @@
 }
 
 html {
-  font-size: v.$base-font-size;
-  background-color: v.$color-bg;
+  font-size: u.$base-font-size;
+  background-color: u.$color-bg;
 }
 
 body {
-  font-family: v.$primary-font;
+  font-family: u.$primary-font;
+  color: u.$base-font-color;
 }
 
 .container {
   width: 100%;
-  max-width: calc(800px + v.$mobile-container-padding-x);
+  max-width: calc(800px + u.$mobile-container-padding-x);
   padding: {
-    left: v.$mobile-container-padding-x;
-    right: v.$mobile-container-padding-x;
+    left: u.$mobile-container-padding-x;
+    right: u.$mobile-container-padding-x;
   }
   margin: {
     left: auto;
