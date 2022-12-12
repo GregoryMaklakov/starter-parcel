@@ -1,11 +1,11 @@
 @use 'sass:math';
 @use 'variables' as v;
 
-//REM
+/* //REM
 @function rem($size) {
   $remSize: math.div($size, v.$base-font-size);
   @return #{$remSize}rem;
-}
+} */
 
 //Percent
 @function percent($px, $from) {
@@ -19,9 +19,9 @@
 	@return $result;
 }
 
-/*  //REM
+//REM
 @function rem($px) {
 	$result: math.div($px, 16) + rem;
 	@return $result;
-} */
+}
 
