@@ -1,6 +1,5 @@
 "use strict";
 
-
 // Bugrer & menu
 /* let menuBtn = document.querySelector('.icon-menu');
 let menu = document.querySelector('.menu');
